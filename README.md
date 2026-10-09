@@ -1,35 +1,74 @@
-# 🛒 বাজার দর (BazarDor)
+# 🛒 BazarDor — Online Market Price Tracker
 
-প্রয়োজনীয় পণ্যের আজকের বাজারদর এক নজরে দেখার ওয়েব অ্যাপ। চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম-দুধ ও মসলার দাম, দামের ওঠানামা এবং বাজারভিত্তিক তুলনা এক জায়গায়।
+BazarDor is a responsive web application that helps users explore daily prices of essential products in Bangladesh. Users can browse products, compare market prices, view price changes, and access detailed product information through a simple and user-friendly interface.
 
-- **Live:** _(ডিপ্লয়ের পর লিংক বসাও)_
-- **GitHub:** _(রিপো লিংক বসাও)_
+## 🌟 Features
 
-## ব্যবহৃত টেকনোলজি
+* **Daily Product Prices:** Browse essential products and their latest available prices.
+* **Price Change Tracking:** Identify products whose prices have increased or decreased.
+* **Category Filtering:** Explore products by category.
+* **Price Sorting:** Sort products from lowest to highest price or highest to lowest price.
+* **Product Details:** View detailed price summaries and market-based pricing information.
+* **User Authentication:** Sign up and sign in using email and password.
+* **Social Authentication:** Support for Google and GitHub login.
+* **Protected Routes:** Restrict access to product details for authenticated users.
+* **User Profile:** View and update user information.
+* **Responsive Design:** Enjoy a smooth experience on mobile, tablet, and desktop devices.
+* **Loading and Notifications:** Provide loading states and helpful success or error messages.
+* **Custom 404 Page:** Display a friendly message for invalid routes.
 
-- Next.js 15 (App Router) + TypeScript
-- Tailwind CSS + DaisyUI
-- BetterAuth (ইমেইল-পাসওয়ার্ড, Google, GitHub) + MongoDB Atlas
-- react-hot-toast
+## 🛠️ Technologies Used
 
-## মূল ফিচার
+* **Next.js** — React framework for building web applications.
+* **React** — Component-based user interface development.
+* **TypeScript** — Type safety and improved code maintainability.
+* **Tailwind CSS** — Utility-first styling and responsive layouts.
+* **DaisyUI / UI Components** — Reusable interface components.
+* **Better Auth** — Authentication and session management.
+* **REST API** — Fetching product and category information.
+* **React Hot Toast** — User notifications.
+* **Git & GitHub** — Version control and source code hosting.
+* **Vercel** — Application deployment.
 
-1. **স্ক্রলিং প্রাইস টিকার** — সব পণ্যের দাম ও ▲/▼ পরিবর্তন অসীম লুপে চলে
-2. **হোম পেজ** — আজ দাম বাড়া ও কমা শীর্ষ ৬টি করে পণ্য এবং সব পণ্যের রেসপনসিভ গ্রিড (বাংলা সংখ্যায়)
-3. **ক্যাটাগরি পেজ ও সর্টিং** — দাম কম→বেশি / বেশি→কম, লোডিং স্কেলিটন ও ৪০৪-স্টাইল খালি অবস্থা
-4. **প্রোডাক্ট ডিটেইল (প্রোটেক্টেড)** — সর্বনিম্ন, সর্বোচ্চ, গড় দাম এবং বাজারভিত্তিক টেবিল; লগইন ছাড়া ঢোকা যায় না
-5. **অথেনটিকেশন ও প্রোফাইল** — সাইন ইন/সাইন আপ, সোশ্যাল লগইন, টোস্ট নোটিফিকেশন, নাম আপডেট
+## 🚀 Getting Started
 
-## চালানোর নিয়ম
+### Prerequisites
 
-```bash
-npm install
-cp .env.example .env     # তারপর .env এ নিজের মান বসাও
-npm run dev
-```
+Make sure you have Node.js and pnpm installed on your computer.
 
-`public/` ফোল্ডারে `logo-icon.png` ও `bazar-hero.png` রাখতে হবে।
 
-## ডেটা সোর্স
+## 📁 Project Structure
 
-`https://api.api-store.workers.dev/api/bazardor` (ব্যাকআপ: `https://api.abcz.workers.dev/api/bazardor`)
+
+
+## 📡 API Endpoints
+
+Base API: `https://api.api-store.workers.dev/api/bazardor`
+
+| Endpoint                  | Description                 |
+| ------------------------- | --------------------------- |
+| `/products`               | Retrieve all products       |
+| `/products?category=chal` | Filter products by category |
+| `/products/1`             | Retrieve a single product   |
+| `/categories`             | Retrieve all categories     |
+| `/categories/chal`        | Retrieve a single category  |
+
+Alternative API: `https://api.abcz.workers.dev/api/bazardor`
+
+## 🌐 Deployment
+
+Deploy the application using Vercel or another supported hosting platform. Configure all required environment variables in the deployment settings before launching the application.
+
+## ⚠️ Disclaimer
+
+Displayed prices are indicative and may vary depending on market conditions, location, and availability. Users should verify prices with local markets before making purchasing decisions.
+
+## 👨‍💻 Author
+
+**Abdur Rahman Raju**
+
+GitHub: [abdur-rahman-raju](https://github.com/abdur-rahman-raju)
+
+---
+
+Built with ❤️ to make everyday market price information easier to access.
