@@ -6,7 +6,7 @@ import { bnPct } from "@/lib/format";
 export default async function Ticker() {
   const products = await getProducts().catch(() => []);
   if (!products.length) return null;
-  const items = [...products, ...products]; // দুইবার, যাতে অসীম লুপ মসৃণ হয়
+  const items = [...products, ...products];
   return (
     <div className="overflow-hidden border-b bg-white" aria-label="আজকের দামের স্ক্রলিং তালিকা">
       <div className="ticker-track flex w-max py-2 text-xs">
