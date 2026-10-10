@@ -9,13 +9,13 @@ export default function Hero() {
         <p className="mt-3 max-w-md text-sm text-gray-600">
           চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিশ্লেষণ, গড় ও দামের সর্বশেষ পরিবর্তন এক জায়গায়।
         </p>
-        {/* পেজ বদলায় না, একই পেজের #সব-পণ্য সেকশনে স্ক্রল করে */}
+      
         <a href="#সব-পণ্য" className="btn btn-primary btn-sm sm:btn-md mt-5">
           সব পণ্য দেখুন
         </a>
       </div>
       <div className="flex justify-center md:justify-end">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+
         <img src="/bazar-hero.png" alt="সবজির ঝুড়ি" className="h-auto w-full max-w-xs md:max-w-sm" />
       </div>
     </section>

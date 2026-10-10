@@ -9,7 +9,6 @@ type Sort = "default" | "asc" | "desc";
 export default function CategoryList({ category, products }: { category: Category; products: Product[] }) {
   const [sort, setSort] = useState<Sort>("default");
 
-  // price একটা সংখ্যা (number), তাই বাংলা সংখ্যায় দেখালেও সর্টিং সংখ্যার মান ধরেই হয়
   const list = useMemo(() => {
     const l = [...products];
     if (sort === "asc") l.sort((a, b) => a.today - b.today);

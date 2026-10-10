@@ -17,7 +17,6 @@ function SignInForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // প্রোটেক্টেড পেজ থেকে ফিরিয়ে দিলে টোস্ট
   useEffect(() => {
     if (sp.get("protected")) toast.error("এই পেজ দেখতে আগে সাইন ইন করুন", { id: "protected" });
   }, [sp]);

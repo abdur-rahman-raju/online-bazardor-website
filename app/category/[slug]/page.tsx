@@ -7,7 +7,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const [categories, products] = await Promise.all([getCategories(), getProducts()]);
   const category = categories.find((c) => c.slug === slug);
-  if (!category) notFound(); // ভুল slug -> ৪০৪ পেজ + "হোম পেজে ফিরে যান"
+  if (!category) notFound();
 
   const items = products.filter((p) => p.category === slug);
   if (items.length === 0) {

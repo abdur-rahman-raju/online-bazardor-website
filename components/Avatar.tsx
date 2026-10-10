@@ -9,7 +9,6 @@ export default function Avatar({
 }) {
   const s = { width: size, height: size };
   if (image) {
-    // eslint-disable-next-line @next/next/no-img-element
     return <img src={image} alt={name ?? "user"} style={s} className="rounded-full object-cover" referrerPolicy="no-referrer" />;
   }
   return (

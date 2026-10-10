@@ -1,10 +1,7 @@
 import type { Dir } from "@/lib/types";
 import { bnPct } from "@/lib/format";
 
-/*
- * Figma অনুযায়ী: দাম বাড়লে (▲) লাল, কমলে (▼) সবুজ, অপরিবর্তিত হলে ধূসর।
- * অ্যাসাইনমেন্টের লেখায় উল্টো আছে (up = সবুজ)। চাইলে নিচের up আর down বদলে নিলেই হবে।
- */
+
 export const TEXT_TONE: Record<Dir, string> = {
   up: "text-red-600",
   down: "text-green-700",
